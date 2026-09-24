@@ -54,7 +54,7 @@ orgs.newOrg('automotive.hephaestus', 'eclipse-hephaestus') {
     },
     orgs.newRepo('opensovd-core'){
       description: "Fork of opensovd-core used as a reference project"
-      forked_repository: "eclipse-opensovd/opensovd-core"
+      forked_repository: "eclipse-opensovd/opensovd-core",
       allow_rebase_merge: false,
       allow_merge_commit: false,
       allow_squash_merge: true,
