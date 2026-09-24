@@ -50,7 +50,22 @@ orgs.newOrg('automotive.hephaestus', 'eclipse-hephaestus') {
 
       branch_protection_rules: [
         default_branch_protection_rule('main')
-      ],
+      ],    
     },
+    orgs.newRepo('opensovd-core'){
+      description: "Fork of opensovd-core used as a reference project"
+      forked_repository: "eclipse-opensovd/opensovd-core"
+      allow_rebase_merge: false,
+      allow_merge_commit: false,
+      allow_squash_merge: true,
+      has_discussions: true,
+      has_issues: true,
+      has_projects: true,
+      has_wiki: true,
+      gh_pages_build_type: "workflow",
+      branch_protection_rules: [
+        default_branch_protection_rule('main')
+      ]
+    }    
   ],
 }
